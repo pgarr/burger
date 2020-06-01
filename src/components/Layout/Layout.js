@@ -1,12 +1,12 @@
 import React from 'react';
-import Aux from '../../hoc/Auxillary';
 import styles from './Layout.module.css';
+import Toolbar from '../Navigation/Toolbar/Toolbar';
 
 const Layout = (props) => (
-  <Aux>
-    <div>Toolbar, SideDrawer, Backrop</div>
+  <React.Fragment>
+    <Toolbar />
     <main className={styles.Content}>{props.children}</main>
-  </Aux>
+  </React.Fragment>
 );
 
 export default Layout;
